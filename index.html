@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meet Notetaker Recorder — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #fbfbfc; --surface: #ffffff; --ink: #1b2029; --muted: #59616f;
+    --hair: #e7e8ee; --accent: #2f6152; --accent-soft: #eaf2ef; --maxw: 68ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161b; --surface: #1a1d24; --ink: #e8eaf0; --muted: #98a1b1;
+      --hair: #2a2e38; --accent: #74b7a4; --accent-soft: #1d2a27;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: clamp(2rem, 5vw, 4.5rem) 1.25rem 4rem; }
+  .eyebrow { font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 .9rem; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.9rem, 4.5vw, 2.7rem); line-height: 1.12; font-weight: 600; letter-spacing: -.01em; margin: 0 0 .6rem; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0 0 2.2rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--hair); }
+  .meta a, a { color: var(--accent); }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.28rem; font-weight: 600; margin: 2.6rem 0 .5rem; }
+  p { margin: .5rem 0; }
+  .lead { font-size: 1.08rem; }
+  ul { margin: .6rem 0; padding-left: 0; list-style: none; display: grid; gap: .55rem; }
+  li { position: relative; padding-left: 1.4rem; }
+  li::before { content: ""; position: absolute; left: .1rem; top: .68em; width: .42rem; height: .42rem; border-radius: 2px; background: var(--accent); }
+  strong { font-weight: 600; }
+  code { background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  .callout { background: var(--accent-soft); border: 1px solid var(--hair); border-radius: 12px; padding: 1rem 1.15rem; margin: 1.4rem 0 0; font-size: .95rem; }
+  footer { margin-top: 3rem; padding-top: 1.4rem; border-top: 1px solid var(--hair); color: var(--muted); font-size: .86rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Privacy Policy</p>
+  <h1>Meet Notetaker Recorder</h1>
+  <p class="meta">Provided by <strong>Boosta</strong> · Last updated 4 July 2026 · Contact: <a href="mailto:vladyslav.strelbytskyi@boosta.com">vladyslav.strelbytskyi@boosta.com</a></p>
+
+  <p class="lead">Meet Notetaker Recorder is an internal tool used within Boosta to record Google Meet meetings and turn them into transcripts and summaries. This policy explains what data the extension handles, why, and who it is shared with.</p>
+
+  <h2>What data we process</h2>
+  <ul>
+    <li><strong>Meeting recordings</strong> — when you start a recording, the extension captures the audio and video of the active Google Meet tab together with your microphone. Recordings contain the content of the meeting, including spoken words and anything shared on screen.</li>
+    <li><strong>Your account email</strong> — obtained through Google sign-in (the <code>userinfo.email</code> scope) to identify who uploaded a recording.</li>
+    <li><strong>Your settings</strong> — the destination Google Drive folder and Slack channel you choose, stored locally in your browser.</li>
+  </ul>
+
+  <h2>How we use it</h2>
+  <p>Recordings are uploaded to Google Drive and processed by Boosta's own pipeline to produce a transcript and a meeting summary, which are delivered to the relevant team (for example, via Slack). Transcription and summarization are performed using third-party AI processing providers (currently OpenRouter and Google Gemini) acting as service providers on Boosta's behalf. We do <strong>not</strong> sell your data, use it for advertising, or use it for any purpose unrelated to producing meeting notes.</p>
+
+  <h2>Storage and retention</h2>
+  <p>Recordings are stored in Google Drive. The raw video file is automatically deleted after 30 days; the transcript and summary are retained as meeting history so the team can refer back to them.</p>
+
+  <h2>Who it is shared with</h2>
+  <p>Your data is accessible to Boosta and to the service providers used to deliver this functionality — Google (Drive storage and Google Meet) and the AI transcription/summarization providers named above — strictly to provide the recording and summary features. It is not sold or shared with any other third parties.</p>
+
+  <h2>Your rights and contact</h2>
+  <p>You can request access to, correction of, or deletion of your data, or ask any privacy question, by contacting <a href="mailto:vladyslav.strelbytskyi@boosta.com">vladyslav.strelbytskyi@boosta.com</a>. As this is an internal tool operated within the boosta.com Google Workspace, Boosta is the controller of the data described above.</p>
+
+  <div class="callout">This extension is distributed privately for internal use at Boosta and is not offered to the general public.</div>
+
+  <footer>© 2026 Boosta · Meet Notetaker Recorder</footer>
+</div>
+</body>
+</html>
