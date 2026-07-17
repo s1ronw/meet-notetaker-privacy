@@ -42,7 +42,7 @@
 <div class="wrap">
   <p class="eyebrow">Privacy Policy</p>
   <h1>Meet Notetaker Recorder</h1>
-  <p class="meta">Provided by <strong>Boosta</strong> · Last updated 4 July 2026 · Contact: <a href="mailto:vladyslav.strelbytskyi@boosta.com">vladyslav.strelbytskyi@boosta.com</a></p>
+  <p class="meta">Provided by <strong>Boosta</strong> · Last updated 17 July 2026 · Contact: <a href="mailto:vladyslav.strelbytskyi@boosta.com">vladyslav.strelbytskyi@boosta.com</a></p>
 
   <p class="lead">Meet Notetaker Recorder is an internal tool used within Boosta to record Google Meet meetings and turn them into transcripts and summaries. This policy explains what data the extension handles, why, and who it is shared with.</p>
 
@@ -51,6 +51,7 @@
     <li><strong>Meeting recordings</strong> — when you start a recording, the extension captures the audio and video of the active Google Meet tab together with your microphone. Recordings contain the content of the meeting, including spoken words and anything shared on screen.</li>
     <li><strong>Your account email</strong> — obtained through Google sign-in (the <code>userinfo.email</code> scope) to identify who uploaded a recording.</li>
     <li><strong>Names of meeting participants</strong> — while a recording is running, the extension reads the display names shown in the Google Meet participant list. This is done so that the transcript and the summary can name the people who took part instead of labelling them &ldquo;Speaker 1&rdquo;, &ldquo;Speaker 2&rdquo;. These names are stored alongside the recording and are used only to produce the meeting notes. No participant names are read when you are not recording.</li>
+    <li><strong>Speaker activity timing</strong> &mdash; while a recording is running, the extension also notes which participant Google Meet is showing as currently speaking, and stores those moments as timestamps alongside the recording. This is used solely to attribute transcript lines to the right participant. The extension performs no audio analysis or voice profiling, and nothing is observed when you are not recording.</li>
     <li><strong>Your settings</strong> — the destination Google Drive folder and Slack channel you choose, stored locally in your browser.</li>
   </ul>
 
